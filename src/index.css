@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.loader {
+  border-top-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.8;
+  }
+}
